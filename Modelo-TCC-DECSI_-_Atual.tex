@@ -115,11 +115,11 @@
 % ---
 % Informações de dados para CAPA e FOLHA DE ROSTO
 % ---
-\titulo{Desenvolvimento de um Sistema Web para Avaliação de Classes da Universidade Federal de Ouro Preto}
-\autor{Oto Braz Assunção}
+\titulo{Desenvolvimento de um Sistema Web para Controle de Faltas da Universidade Federal de Ouro Preto}
+\autor{Bárbara Chesman Almeida}
 \local{João Monlevade}
 \dia{30}
-\mes{3}
+\mes{8}
 \ano{2017} % Indicar apenas o ano da monografia
 
 
@@ -140,11 +140,11 @@
 % ---
 % Dados de Orientação e Banca de Defesa
 % ---
-\orientador{Prof. Me. Theo Silva Lins}
+\orientador{Prof Dr. Fernando Bernardes de Oliveira}
 \orientadorTitulacao{Mestre/Doutor em Ciência da Computação}
 \orientadorDepartamento{DECSI - Universidade Federal de Ouro Preto}
 
-\coorientador{Prof Dr. Fernando Bernardes de Oliveira}
+\coorientador{Mestrando João Pedro Moura}
 \coorientadorTitulacao{Mestre/Doutor em }
 \coorientadorDepartamento{DECSI - Universidade Federal de Ouro Preto}
 
@@ -350,21 +350,25 @@
 % ---
 \begin{agradecimentos}
 
-Agradeço primeiramente aos meus pais, que têm me apoiado durante toda a minha vida sem exceções e sem medir esforços. Graças a eles, eu fui capaz de chegar até esta fase da minha vida.
+Aos meus pais Ivete e Karil, minha irmã Luiza e a toda minha família que, com muito carinho e apoio, não mediram esforços para que eu chegasse até esta etapa de minha vida. 
 
-Meus agradecimentos ao Plínio Roque e ao Lucas Saraiva, amigos e companheiros durante toda a minha vida acadêmica desde os tempos de ensino-médio. Amigos que pude contar, que me ajudaram e aconselharam durante a graduação e quem me espelhei bastante.
+A todos os professores do curso, que foram tão importantes na minha vida acadêmica e no desenvolvimento desta monografia. Em especial ao professor Alexandre Magno, exemplo de superação e dedicação, obrigada pelos concelhos, pelo incentivo e amizade.
 
-Ao Marcus Calisto e João Pedro Moura, que foram parceiros durante a maior parte da minha graduação, amigos que também sempre me ajudaram e com quem pude aprender muitas coisas.
+A minha maravilhosa e eterna amiga Verônica, 
 
-À Lanna Oliveira e Daniel Ferreira, aqueles quem pude conhecer e ficar próximo apenas nos últimos semestres da faculdade, mas antes tarde do nunca.
+Ao Bruno Lacerda, que foi parceiro durante toda minha graduação e que agora encerra essa conquista ao meu lado. Você sempre será meu grande amigo!
 
-Agradeço a HaeIn Lee, aquela que eu tive a grande sorte de conhecer, alguém responsável por me fazer superar um dos momentos de maiores dificuldades da minha vida.
+Aos meus amigos do Laboratório iMobilis, amigos que sempre me ajudaram e com quem pude aprender muitas coisas. Vocês são o melhor time do mundo!
 
-E finalmente, agradeço aos meus orientadores Theo Silva Lins e Fernando Bernardes de Oliveira por terem aceitado a minha proposta, acreditarem na minha capacidade para desenvolver este projeto e terem me auxiliado e guiado durante o decorrer no trabalho.
+Meus agradecimentos aos amigos da salinha de estudos, companheiros durante grande parte da graduação. Amigos que pude contar, que me ajudaram e aconselharam durante a graduação e quem me espelhei bastante.
 
-Muito obrigado a todos aqueles que de alguma forma contribuíram direta e indiretamente para que eu pudesse chegar até aqui.
+À melhor república Mandala, que demonstraram que amizades e companheirismo, mesmo que dotados de muitas diferenças pessoais, são os elementos essenciais para o convívio em grupo, além da irmandade que nos une. Especialmente, agradeço a amiga Pâmela por ter me acolhido e por todos os abraços e insultos carinhosos que trocamos ao longo do curso.
 
+Agradeço ao meu namorado e companheiro Rafael Bortoline, aquele que eu tive a grande sorte de conhecer, alguém responsável por me fazer acreditar que os obstáculos são a nossa força.  
 
+E finalmente, agradeço aos meus orientadores Fernando Bernardes de Oliveira e João Pedro por terem aceitado a minha proposta, acreditarem na minha capacidade para desenvolver este projeto e terem me auxiliado e guiado durante o decorrer no trabalho.
+
+A todos, o meu muito obrigado!
 
 
 \end{agradecimentos}
@@ -401,7 +405,10 @@ Muito obrigado a todos aqueles que de alguma forma contribuíram direta e indire
 %  resumo, antecedidas da expressão Palavras-chave:, separadas entre si por
 %  ponto e finalizadas também por ponto.
 
-As avaliações de classes e docentes são uma das metodologias mais utilizadas para identificação de precariedades e para o aprimoramento do ensino. Na Universidade Federal de Ouro Preto, o Núcleo de Apoio Pedagógico utiliza \textit{Pesquisa de Desenvolvimento das Disciplinas de Graduação da UFOP} como ferramenta para avaliação. Entretanto, a mesma é muito antiga e demonstra não atender as necessidades dos docentes e discentes. Com o propósito de cobrir as limitações da pesquisa atual e beneficiar o ensino da UFOP, foi desenvolvida uma plataforma \textit{web} denominada \textit{SisAV}. A plataforma permite não apenas o gerenciamento de questionários pelo Núcleo de Apoio Pedagógico, mas também que os docentes criem e gerenciem seus próprios questionários do modo que desejarem. Por fim, após desenvolvido o sistema, foi realizada uma reunião com o Núcleo de Apoio Pedagógico de Ouro Preto e a proposta foi apoiada por eles. Ficou previsto o lançamento de um projeto-piloto no Instituto de Ciências Exatas e Aplicadas, o qual consistirá da fase de implantação e utilização do sistema, no primeiro semestre de 2017.
+%resumo ttc1
+Este artigo apresenta o desenvolvimento de uma plataforma para o gerenciamento de faltas dos alunos pelos professores do Instituto de Ciências Exatas e Aplicadas (ICEA). A plataforma tem como finalidade facilitar o processo de lançamento e acompanhamento das faltas, usando o mesmo sistema de autenticação do portal Minha UFOP como acesso, tornando a experiência do usuário mais agradável. Os professores poderão controlar de maneira mais práticas as faltas, além dos alunos também acompanharem os lançamentos diariamente. Ao invés do lançamento de faltas ocorrer ao final do semestre, os professores farão a chamada por meio do site em sala de aula, que atualizará os dados no sistema. Este documento apresenta a primeira parte do trabalho, compondo o levantamento de requisitos, além de apresentar os modelos observados até o momento.
+
+O gerenciamento de faltas de docentes é uma metodologia obsoleta de controlar presenças, é uma das metodologias mais utilizadas para identificação de precariedades e para o aprimoramento do ensino. Na Universidade Federal de Ouro Preto, o Núcleo de Apoio Pedagógico utiliza \textit{Pesquisa de Desenvolvimento das Disciplinas de Graduação da UFOP} como ferramenta para avaliação. Entretanto, a mesma é muito antiga e demonstra não atender as necessidades dos docentes e discentes. Com o propósito de cobrir as limitações da pesquisa atual e beneficiar o ensino da UFOP, foi desenvolvida uma plataforma \textit{web} denominada \textit{SisAV}. A plataforma permite não apenas o gerenciamento de questionários pelo Núcleo de Apoio Pedagógico, mas também que os docentes criem e gerenciem seus próprios questionários do modo que desejarem. Por fim, após desenvolvido o sistema, foi realizada uma reunião com o Núcleo de Apoio Pedagógico de Ouro Preto e a proposta foi apoiada por eles. Ficou previsto o lançamento de um projeto-piloto no Instituto de Ciências Exatas e Aplicadas, o qual consistirá da fase de implantação e utilização do sistema, no primeiro semestre de 2017.
 
 \textbf{Palavras-chaves}: avaliação de classes. questionários. sistema web. desenvolvimento web.
 \end{resumo}
@@ -450,6 +457,7 @@ As avaliações de classes e docentes são uma das metodologias mais utilizadas 
   \item[ICEA] Instituto de Ciências Exatas e Aplicadas
   \item[IP] \textit{Internet Protocol}
   \item[LDAP] \textit{Lightweight Directory Access Protocol}
+  \item[ADMINLTE] \textit{Free bootstrap theme}
   \item[MVC] \textit{Model-View-Controller}
   \item[NAP] Núcleo de Apoio Pedagógico
   \item[NTI] Núcleo de Tecnologia da Informação
@@ -492,6 +500,16 @@ As avaliações de classes e docentes são uma das metodologias mais utilizadas 
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
 \chapter[Introdução]{Introdução}
+%tcc1
+O objetivo deste trabalho é projetar um sistema de gerenciamento online de faltas para os alunos e os professores do ICEA. O gerenciamento de faltas é um dos maiores problemas enfrentados nas universidades, já que prejudica os alunos que não tem controle sobre elas, acarretando reprovações por falta. O controle manual também resulta transtorno aos professores que ministram aulas em diversas turmas, os quais dependem de suas listas de chamadas impressas ou planilhas para gerenciá-las.
+
+% FBO: este parágrafo está um pouco confuso. :)
+% BCA: esta parte foi reescrita
+No contexto atual da UFOP, somente ao fim do semestre o total de faltas de cada aluno é lançado pelo professor no sistema MinhaUfop. Desse modo, os alunos não acompanham durante o semestre o número de faltas em um portal, somente consultando cada professor para saber o número de faltas até o momento. Uma vez que a proposta desse sistema seja o controle online, os professores farão a chamada pela plataforma web e os alunos poderão acompanhar suas presenças atualizadas em tempo real. Logo, o objetivo consiste em apresentar a relação de faltas aos alunos para que eles gerenciem e controlem suas faltas.
+
+O restante do artigo é organizado como segue. A Seção \ref{sec:problema} apresenta o problema em estudo e as questões associadas, como o cadastro de faltas para turmas com mais de um professor, como aulas práticas e teóricas, e a atualização dos alunos cadastrados na turma que são matriculados depois e os que trancaram matrícula. Os objetivos gerais e específicos do trabalho são explanados e discutidos na Seção \ref{sec:objetivos}. As etapas desenvolvidas até o presente momento são apresentadas na Seção \ref{sec:etapas}. A Seção \ref{sec:avaliacao} apresenta a avaliação do andamento do trabalho, além das considerações finais desse projeto, bem como as etapas futuras para conclusão do projeto.
+%
+
 
 Docentes em escolas e universidades geralmente possuem o conhecimento de quais são as metodologias de ensino mais benéficas para facilitar o aprendizado deles mesmos. No entanto, segundo \citeonline[p. 8]{fry:2009}, eles tendem a não considerar diretamente qual é a maneira mais eficiente a fim de contribuir para o aprendizado dos discentes de suas classes. Além disso, pouco são feitas análises com o propósito de identificar se a metodologia empregada no momento está sendo efetiva ou não. 
 
@@ -504,6 +522,13 @@ A Tecnologia da Informação (TI) é ``todo \textit{software} e \textit{hardware
 O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o gerenciamento de questionários na Universidade Federal de Ouro Preto (UFOP). Com o objetivo de facilitar a integração do sistema à UFOP foi determinado que o acesso ao mesmo fosse realizado por meio das credenciais da plataforma \textit{minhaUFOP} utilizadas pelos docentes, discente e outros funcionários da instituição. 
 
     \section{Problema}
+    %tcc1
+    
+Com o grande número de alunos que são matriculados em uma turma, a chamada de faltas fica custosa para professores que lecionam para várias turmas, e depois precisam contabilizar os lançamentos. Como solução para atender a esse tipo de demanda surgiu a necessidade de um Sistema Integrado de Gestão (SIG), que fornecerá um portal para registrar a quantidade de faltas ao longo do tempo, podendo assim gerar relatórios e estudos para a analise do número de faltas.
+
+A plataforma tem características importantes que devem ser consideradas, tais como: o registro de faltas para turmas com mais de um professor vinculado e a verificação do limite de faltas dos alunos. Portanto, o modelo de dados considera que uma disciplina pode ter mais de um professor. Por exemplo, uma turma pode ter dois professores, sendo um para aula prática e outra para teórica. E a segunda característica está na tabela de disciplinas, que possui o número limite de faltas para aprovação, que quando é atingido, tanto o aluno quanto o professor serão notificados, esse recurso é essencial para identificar alunos que desistiram da disciplina ou trancaram matrícula. Tais peculiaridades são fundamentais para o gerenciamento e garantia da completude do escopo do trabalho. %BCA: acredito que desvincular o aluno(deixar de lançar a falta) que atingiu o limite é muito rigoroso, já que esse aluno pode vir a abonar faltas futuramente. Mas depois de notificá-los, o que pode ser feito????
+
+    
 
     A UFOP faz o uso de uma avaliação e acompanhamento semestral das disciplinas chamada \textit{Pesquisa de Desenvolvimento de Disciplinas da Graduação da UFOP} (PDDGU). A pesquisa possui duas versões, ambas possuindo dez questões fechadas. Uma delas é referente a avaliação que os docentes fazem das turmas que eles lecionaram em determinado semestre, enquanto que a outra é direcionada a avaliação que os discentes fazem dos docentes responsáveis por ministrar as aulas de suas turmas.
 
@@ -518,11 +543,17 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
         \subsection{Objetivo Geral}
 
     O objetivo do trabalho é o desenvolvimento de uma plataforma \textit{web} para avaliação de classes da UFOP e o gerenciamento e divulgação de orientações realizadas. A plataforma será utilizada por docentes, discentes e pelo NAP. Os docentes e o NAP poderão elaborar questionários e disponibilizá-los às turmas e os discentes poderão respondê-los. Por fim, os resultados dos questionários serão apresentados por meio de gráficos aos usuários do sistema.
+    
+    %tcc
+    O objetivo deste projeto é a modelagem e a implementação de uma plataforma online prática e funcional para gerenciamento de faltas. A aplicação permitirá o lançamento diário das faltas pelos professores e o monitoramento e controle das faltas pelos alunos. O objetivo neste relatório é apresentar de forma clara e simplificada as diversas etapas que são necessárias para o desenvolvimento em uma plataforma deste tipo, desde a análise até ao desenvolvimento propriamente dito.
 
         \subsection{Objetivos Específicos}
+        
+        
+
 
             Os objetivos específicos do trabalho são:
-
+      
             \begin{itemize}
             	\item Permitir que o NAP elabore e disponibilize questionários a universidade.
                 \item Permitir que os docentes criem seus próprios questionários de avaliação de classes.
@@ -531,6 +562,17 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
                 \item Facilitar a detecção de precariedades a partir no ensino a partir dos resultados.
                 \item Fornecer meios para que discentes tenham maior conhecimento das orientações realizadas no ICEA.
                 \item Facilitar a busca de possíveis orientadores por parte dos discentes.
+                
+                
+                %tcc                      
+            
+\item Levantamento de requisitos para entender o ambiente de negócios do software. Ela permite que se consiga ter uma percepção ampla sobre os resultados solicitados e sobre as principais funcionalidades esperadas.
+
+\item Implementar todas as funcionalidades propostas para ambos os módulos, um dedicado aos discentes e outro aos docentes da instituição, garantindo que a plataforma seja integrada.
+
+\item Escrever cenários de testes e executá-los, a partir da ferramenta Selenium-IDE, utilizada para testes funcionais automatizados através do navegador. Avaliando o desempenho e identificando possíveis falhas da aplicação proposta. 
+
+\item Analisar e discutir os resultados obtidos, além de identificar possíveis melhorias e considerações gerais sobre o processo.
             \end{itemize}
 
 
@@ -546,47 +588,56 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
 \chapter{Referenciais teóricos}\label{ref_teoricos}
 % ---
 
-	Este capítulo apresenta toda a fundamentação teórica do projeto. São discutidas as metodologias de avaliação de docentes em instituições de ensino, ferramentas e tecnologias utilizadas para o desenvolvimento e sistemas correlatos.
+	Este capítulo apresenta toda a fundamentação teórica do projeto. São discutidas as metodologias de gerenciamento de faltas pelos docentes nas instituições de ensino, ferramentas e tecnologias utilizadas para o desenvolvimento e sistemas correlatos.
 
-    \section{Avaliações de Docentes}
+    \section{Controle de Frequência}
 
-        A avaliação das classes é fundamental para auxiliar docentes, especialmente aqueles com pouca experiência, a se desenvolverem como educadores dentro de uma instituição.
-
-        \begin{citacao}[english]
-            Evaluation is a way of understanding the effects of our teaching on students learning. It implies collecting information about our work, interpreting the information and making judgements about which actions we should take to improve practice[...] Evaluation is an analytical process that is intrinsic to good teaching \apud[p. 198]{ramsden:1992}{fry:2009}.
-        \end{citacao}
-
-        De acordo com \apudonline[p. 198]{gosling:2005}{fry:2009}, muitas das avaliações realizadas no mundo seguiam as abordagens daquelas dos Estados Unidos. Estas, eram em sua grande maioria somativas, ou seja, elas eram pontuais, geralmente ocorrendo ao fim do período letivo e tinham como objetivo principal a comparação do desempenho dos docentes para definição de ocupações e promoções dentro da instituição. Contudo, em universidades do Reino Unido, Austrália e da Ásia, as avaliações geralmente eram formativas e de desenvolvimento, sendo realizadas ao longo do período e tendo a melhora da qualidade como foco principal.
-		
-         A Figura \ref{fig:feedback_sources} mostra os principais tipos de avaliações baseados na origem do \textit{feedback}: 
-         
-        \begin{figure}[h]	
-           \centering
-           \caption{Origem e Métodos de Obtenção de \textit{Feedback}}						   \label{fig:feedback_sources}
-           \includegraphics[scale=0.25]{img/feedback_sources_methods}
-           \subcaption*{Fonte: \citeonline[p. 202]{fry:2009}}
-        \end{figure}   
+        O gerenciamento de faltas é fundamental para auxiliar docentes e discentes, já que o número de faltas é considerado como critério de avaliação para a aprovação nas disciplinas. Usar um sistema para controle de frequência escolar também é prático para a instituição de ensino, pois com o histórico de frequência dos alunos, a universidade pode gerar arquivos para utilização por professores e gestores, além de facilitar a visualização de estatísticas, dados e metas e acompanhamento dos discentes.
+               
+        Existem inúmeras maneiras de gerenciar as faltas, seja por planilhas, documentos online e até mesmo o método mais antigo, o papel. As instituições de ensino em geral têm em seu portal o diário de frequência, o que facilita o controle dos alunos. Definir qual metodologia deverá ser usada dependerá de diversos fatores: a cultura institucional, a qualidade do processo, a usabilidade do sistema, etc. 
+                
+        Dessa forma, o processo atual de gerenciar faltas pode ser feito por planilhas ou no papel, sendo assim, o professor tem acesso a relação de alunos matriculados e conforme escolha dele, o docente poderá gerenciar as faltas pela própria planilha, ou a partir da impressão da mesma, de modo que o professor registre as faltas e as contabilize, para que ao final do semestre letivo, seja entregue o relatório impresso ao colegiado, ao qual é responsável por aprovar o documento. 
+        O Diário de Frequência é uma plataforma \textit{web} desenvolvida especificamente para a UFOP do campus ICEA e diante dessa característica o sistema foi criado atendendo o processo atual de chamada. Ou seja, o documento impresso usado hoje com a relação de faltas será substituído pelo relatório gerado pelo sistema. 
         
-        Existem inúmeras maneiras de avaliar o ensino em uma instituição de ensino. Definir qual delas deverá ser usada dependerá de diversos fatores: a cultura institucional, o que se busca atingir com a avaliação, a origem do \textit{feedback} buscado pela instituição, etc. 
-		
-        \subsection{Pesquisa de Desenvolvimento das Disciplinas da UFOP}
+        Contudo, o NTI foi contactado para que a proposta desse projeto fosse validada, permitindo assim, que a proposta fosse executada, já que atualmente nada tem sido desenvolvido para controlar faltas nos cursos presenciais.
+        
+        \subsection{Levantamento de Requisitos junto aos professores do ICEA }
+        
+        O diário de frequência do ICEA é um sistema para registrar e controlar as faltas dos alunos. Este sistema importa para sua base de dados as planilhas das turmas em que os docentes lecionam e a partir da lista de alunos matriculados é realizada a chamada online. Os discentes podem acompanhar o número de faltas para cada disciplina em que ele esta matriculado, desde que os seus professores utilizem o sistema.
 
-        A Pesquisa de Desenvolvimento das Disciplinas da UFOP é o sistema utilizado pela UFOP para fazer a avaliação e acompanhamento das disciplinas. Esta pesquisa é gerenciada pelo NAP e ela é respondida pelos discentes e docentes da UFOP após o termino de cada semestre letivo a partir da plataforma \textit{minhaUFOP}. A pesquisa que os discentes respondem (Anexo \ref{pddgu}) contém dez questões fechadas com cinco opções cada (Muito Bom - Bom - Regular - Ruim - Sem opinião). Os discentes podem escolher apenas uma das opções por pergunta. Conforme indicado pelo NAP\footnote{http://www.prograd.ufop.br/index.php/nap/avaliacao-disciplinas}, os resultados da pesquisa são divulgados a cada semestre e cada docente recebe seus respectivos relatórios individuais, os quais podem ser utilizados como base para preparação para o lecionamento de suas futuras turmas.
+		Diante dessa problemática foi discutido e levantado requisitos essenciais para a aplicação e quais funcionalidades o sistema contemplaria. 
+        
+        Os principais requisitos levantados são:
+      
+            \begin{itemize}
+            	\item Importar planilha da turma para fazer chamada 
+                \item Registrar falta diária ou por intervalo de dias
+                \item Anexar atestado para solicitar abono de faltas
+                \item Acompanhamento do número de faltas 
+            \end{itemize}
+                
+        
 
-    \section{Frameworks}
+    \section{UFOP Boilerplate}
+    
+    Para simplificar o processo de autenticação dos sistemas web desenvolvidos para a comunidade acadêmica da UFOP, foi criado um boilerplate(https://github.com/jpmoura/ufop-boilerplate-laravel), um template front-end para a criação de sites da Web, rápidos, robustos e adaptáveis.
+    
+    Esse boilerplate contém somente a parte lógica da autenticação modelada para o Laravel 5.3, geração otimizada dos assets e alguns tratamentos de eventos usando log, que são exemplos bem simples de uso do framework.
 
-        Atualmente, é esperado que o desenvolvimento de \textit{softwares} e aplicações seja realizado rapidamente. No entanto, sabe-se que desenvolver algo com qualidade em pouco tempo não é uma tarefa trivial. A utilização correta de \textit{frameworks} implica na redução do tempo gasto desenvolvendo ao mesmo tempo que melhora a qualidade do produto final.
-
-        \textit{Frameworks} são estruturas genéricas reutilizáveis que implementam funcionalidades utilizadas por tipos similares de aplicações. Segundo \citeonline{schmidt:2004}, eles são um conjunto de artefatos integrados (classes, objetos e componentes) que fornecem uma arquitetura reusável à aplicações com domínios semelhantes.
+	Ele usa a mesma autenticação do Minha UFOP, ou seja, é extensível a toda universidade e não somente ao campus ICEA. Essa autenticação é feita através da API LD(AP)I(https://github.com/jpmoura/ldapi ), desenvolvida por Plinio e Joao Pedro.    
 
         \subsection{Frameworks e Desenvolvimento Web}
-
-            A utilização de \textit{frameworks} no desenvolvimento \textit{web} é imensa e se faz essencial para o sucesso da aplicação. A maioria dos \textit{frameworks} para desenvolvimento \textit{web} se baseiam no padrão de projeto \textit{Model-View-Controller} (MVC) visto que \textit{websites} são extremamente dependentes de como é realizada a interação com os dados e o modo que os mesmos são apresentados nas páginas \textit{web}. ``O MVC foi proposto em 1980 como uma abordagem para design de GUI\footnote{Graphical User Interface}, permitindo múltiplas representações de um objeto e diferentes interações com estas representações'' \cite[p. 432, tradução nossa]{sommervile:2011}. Considerando o domínio dos \textit{websites}, cada componente lógico do MVC pode ser definidos da seguinte maneira:
+        
+            A utilização de \textit{frameworks} no desenvolvimento \textit{web} é imensa e se faz essencial para o sucesso da aplicação. Já que ele destina-se a aliviar a sobrecarga associada a atividades comuns realizadas no desenvolvimento. 
+            
+            A maioria dos \textit{frameworks} para desenvolvimento \textit{PHP} se baseiam no padrão de projeto \textit{Model-View-Controller} (MVC). MVC é uma forma de programação que isola a lógica de negócio da camada de exibição. Essa organização faz com que o trabalho seja desenvolvidoe mais rápido e de forma setorizada. 
+            
+            O MVC foi proposto em 1980 como uma abordagem para design de GUI\footnote{Graphical User Interface}, permitindo múltiplas representações de um objeto e diferentes interações com estas representações'' \cite[p. 432, tradução nossa]{sommervile:2011}. Considerando o domínio dos \textit{websites}, cada componente lógico do MVC pode ser definidos da seguinte maneira:
 
             \begin{itemize}
-              \item \textbf{\textit{Model:}} responsável por gerenciar os dados do sistema.
-              \item \textbf{\textit{View:}} responsável por definir como os dados serão representados e exibidos ao usuários. É a partir da \textit{view} que o usuários faz a interação com o sistema.
-              \item \textbf{\textit{Controller:}} responde às interações do usuário, definindo quais operações serão realizadas, quais dados serão manipulados e quais \textit{views} serão utilizadas para representá-los.
+              \item \textbf{\textit{Model:}} responsável pelo modelo de dados, gerenciar os dados do sistema.
+              \item \textbf{\textit{View:}} responsável pela camada de exibição, definir como os dados serão representados e exibidos ao usuários. É a partir da \textit{view} que o usuários fazem a interação com o sistema.
+              \item \textbf{\textit{Controller:}} respinsável pela lógica de negócio, responde às interações do usuário, definindo quais operações serão realizadas, quais dados serão manipulados e quais \textit{views} serão utilizadas para representá-los.
             \end{itemize}
 
             \citeonline{sommervile:2011} também afirma que, apesar das diferenças, todos os \textit{frameworks} para aplicações \textit{web} geralmente oferecem as seguintes funcionalidades:
@@ -600,12 +651,17 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
             \end{itemize}
 
         \subsection{Laravel} 
-
-        O \textit{framework} utilizado para o desenvolvimento deste trabalho foi o \textit{Laravel}\footnote{https://laravel.com/}. A primeira versão dele foi lançada em 2011 e nos últimos anos o \textit{framework} evoluiu rapidamente, se tornando bastante popular entre os desenvolvedores \textit{PHP}. Assim como grande maioria dos \textit{frameworks} para aplicações \textit{web}, o \textit{Laravel} também segue o padrão MVC. Ele é \textit{open-source} e, embora seja extremamente poderoso, possui uma curva de aprendizado bem pequena. Isso se dá pelo fato dele possuir uma linguagem bastante expressiva, além de simplificar a execução de diversas tarefas necessárias durante o desenvolvimento de aplicações \textit{web}. Uma das grandes vantagens do \textit{Laravel} é a criação de \textit{migrations}, que basicamente são um controle de versão para o banco de dados da aplicação. Deste modo, fazer modificações na estrutura do banco de dados e compartilhamento do mesmo entre desenvolvedores se torna algo extremamente simples de ser feito. 
+		 \textit{Laravel}\footnote{https://laravel.com/} é um \textit{framework}  \textit{open-source}, voltado para \textit{web} e feito em PHP. Foi criado por Taylor Otwell e teve sua primeira versão dispobilizada em 2011,  tendo seu código-fonte hospedado no GitHub. 
+         
+         Algumas características nativas do \textit{Laravel} são sua sintaxe simples e concisa, o que fez com que nos últimos anos o \textit{framework} evoluisse rapidamente, se tornando bastante popular entre os desenvolvedores \textit{PHP}, como aponta a pesquisa recente do Sitepoint\footnote{https://www.sitepoint.com/best-php-framework-2015-sitepoint-survey-results/} que mostrou que é o framework mais popular de 2015.
+         
+         Assim como grande maioria dos \textit{frameworks} para aplicações \textit{web}, o \textit{Laravel} também segue o padrão MVC e tem uma série de características que tornam possível o desenvolvimento rápido de aplicações. Uma das grandes vantagens desse \textit{framework} é a criação de \textit{migrations}, que basicamente são um controle de versão para o banco de dados da aplicação. Deste modo, fazer modificações na estrutura do banco de dados e compartilhamento do mesmo entre desenvolvedores se torna algo extremamente simples de ser feito. 
+         
+         Além disso, para o layout, foi usado como base o design \textit{AdminLTE}\footnote{https://adminlte.io/themes/AdminLTE/documentation/index.html} desenvolvido por Abdullah Almsaeed\footnote{mailto:abdullah@almsaeedstudio.com}, utilizando uma versão personalizada da dashboard do AdminLTE 2, template que já está sendo usado nas aplicações desenvolvidas para o campus ICEA, dessa forma, o gerenciador de faltas seguirá a mesma ideia e padrão de design. 
 
     \section{Serviços de Diretório e LDAP}
 
-        ``Um diretório é um banco de dados especializado, construído especificamente para realização de consultas, além de fornecer operações básicas de atualização'' \cite[p. 3, tradução nossa]{openLdap:2011}.
+        Um diretório é um banco de dados especializado, construído especificamente para realização de consultas, além de fornecer operações básicas de atualização'' \cite[p. 3, tradução nossa]{openLdap:2011}.
 
         De acordo com \citeonline{openLdap:2011}, o \textit{Lightweight Directory Access Protocol} (LDAP) é um protocolo leve utilizado para fazer acesso a serviços de diretório to tipo \textit{X.500}, geralmente utilizando conexões orientadas a transferência de serviços tais como \textit{TCP/IP} e do modelo cliente-servidor. Os serviços de diretório \textit{X.500}, também chamados de serviços de diretório OSI, possuem um Protocolo de Acesso à Diretórios (DAP) entre o \textit{gateway} e servidor. Entretanto, este DAP é pesado e consume muitos recursos. A vantagem que o LDAP possui é a pequena utilização de recursos ao mesmo tempo que fornece a maioria das funcionalidades do DAP. 
 
@@ -617,6 +673,9 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
            \includegraphics[scale=0.6]{img/ldap_tree}
            \subcaption*{Fonte: \citeonline[p. 5]{openLdap:2011}}
         \end{figure}
+        
+        
+Com base nisso, para a sessão de autenticação usando os dados do Minha UFOP, foi usada a \cite{API-LDAP} como API de autenticação, que atualmente está hospedada nos servidores do campus do ICEA. Permitindo que com os mesmos dados de acesso ao portal já existente, o diário também seja acessado.
 
         \subsection{OpenLDAP na UFOP}
 
@@ -634,12 +693,12 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
 
 	Com o objetivo de gerenciar os bancos de dados computacionais, Sistemas de Gestão de Banco de Dados (SGBD) foram criados. Os SGBDs permitem que os usuários executem tarefas tais como armazenamento, organização, adição, acesso e processamento dos dados de maneira mais simples e eficiente. Durante o trabalho, foram utilizados os SGBDs \textit{MySql}, que estava instalado no servidor para testes, e \textit{MariaDB}, que estava instalado no ambiente de desenvolvimento.  
    
-   \subsection{MySql}
+   \subsection{MySQL}
       
       O \textit{MySQL}, segundo \citeonline{mysql:2017}, é desenvolvido, distribuído e mantido pela Oracle Corporation\footnote{www.oracle.com}, sendo o SGBD com a versão \textit{open-source} mais popular do mundo, fazendo uso da Structered Query Language (SQL), que é a linguagem de manipulação de dados utilizada pela maioria dos SGBDs.
       
-      \subsection{MariaDB}
-      
+      \subsection{MySQL WorkBench}
+      importação das migrations, plugin Laravel
       MariaDB Server\footnote{mariadb.org} é um servidor de banco de dados completamente \textit{open-source} criado pelos mesmos desenvolvedores do \textit{MySQL}. Conforme \citeonline{aboutmariadb:2016}, ele é capaz de substituir completamente o \textit{MySQL} e o processo de atualização e substituição do sistema do banco de dados é trivial. O \textit{MariaDB}, de acordo com \citeonline{featuresmariadb:2016}, é basicamente um \textit{MySQL} melhorado, sendo mais rápido e possuindo diversos mecanismos de armazenamento e funcionalidades além daquelas suportadas pelo \textit{MySQL}.
       
     \section{Servidores Web}
@@ -658,43 +717,59 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
 
     \section{Sistemas Correlatos}
 
-       Nesta seção serão apresentados alguns sistemas correlatos à plataforma desenvolvida. A correlação existem devido a um dos seguintes fatores: funcionalidades, métodos empregados e aplicação. 
+       Nesta seção serão apresentados alguns sistemas correlatos à plataforma desenvolvida. A correlação existem devido a um dos seguintes fatores: funcionalidades, métodos empregados e aplicação.     
+       
 
-        \subsection{RateMyProfessors.com}
+%Como trabalhos relacionados, foram encontradas três aplicações de serviços de faltas, tanto no mercado quanto na própria instituição, e somente uma sendo para o lançamento de faltas pelo professor. Uma breve descrição das aplicações é abordada abaixo.
 
-        O \textit{RateMyProfessors.com}\footnote{www.ratemyprofessors.com} é uma aplicação construída por universitários para que os alunos das universidades pudessem avaliar tanto os docentes quanto as universidades dos Estados Unidos. A princípio, a aplicação consistia apenas de um \textit{website}, porém, hoje ela também conta com um aplicativo para \textit{Smartphones}. 
+        \subsection{Formei UFOP}
+        O \textit{FormeiUFOP} é o nome da aplicação móvel desenvolvida por \citeonline{enio:2016} como trabalho de conclusão do curso de Sistemas de Informação da UFOP. O sistema tem como objetivo facilitar o gerenciamento de notas do campus ICEA. 
+        
+        O aplicativo móvel é voltado para os estudantes da UFOP acompanharem seu progresso acadêmico, desenvolvido com o principal objetivo de planejar e gerenciar o progresso dos discentes. Podendo o discente avaliar seu desempenho escolar, definir suas prioridades de disciplinas a cada semestre e prever o término do curso. Esse trabalho, tem como um de seus objetivos futuros, a criação do controle de faltas, sendo atingido na proposta desse trabalho.
+               
+        A motivação do \textit{FormeiUFOP} está no fato em que nas universidades os discentes são responsáveis por escolherem grande parte das disciplinas que eles cursarão ao longo de sua vida acadêmica. Logo, a plataforma veio para facilitar e auxiliar os estudantes a decidir quais disciplinas eles faram para adiantar o curso. Tem-se como trabalhos futuros, o controle de faltas online do ICEA, sendo contemplado nesse projeto.
 
-        A motivação do \textit{RateMyProfessors.com} está no fato em que nas universidades americanas os discentes são responsáveis por escolherem grande parte das disciplinas que eles cursarão ao longo de sua vida acadêmica. Logo, a plataforma veio para facilitar e auxiliar os estudantes a decidir quais disciplinas eles querem aprender e quais turmas participar.
+        \subsection{Presente!}
+         O \textit{Presente!}\footnote{http://www.ufla.br/ascom/2016/04/26/volta-as-aulas-estudante-da-ufla-cria-aplicativo-para-auxiliar-no-controle-de-faltas/} é uma ferramenta gratuita que auxilia os discentes no controle das faltas em cada disciplina matriculada. Com o aplicativo, os próprios usuários cadastram as matérias que estão cursando naquele período e os respectivos dias das aulas; então, eles receberão notificações no celular perguntando se houve frequência na referida aula cadastrada. O aplicativo é gratuito e \textit{open-source}.
 
-        A avaliação dos docentes é padrão, contendo informações relacionadas a dificuldade da classe, se o discente gostaria de ter aula novamente com o docente, necessidade de livros didáticos, se a presença é cobrada, além de fornecer diversas \textit{tags} para definir o docente e um campo aberto caso o discente queira detalhar mais as informações.
+        Apesar de todos os pontos positivos mencionados, utilizar o \textit{Presente!} para gerenciar faltas não é eficiente visto que ele depende do aluno para registrar suas faltas e esse controle pode contradizer com o controle dos docentes, existe a possibilidade do aluno esquecer de registrar uma aula que perdeu e acabar faltando em uma aula que seria a última oportunidade para ser aprovado, e ocorrerá a reprovação por falta, já que o limite foi estourado. 
+        
+        Logo, disponibilizar e gerenciar por parte do docente é mais seguro e o discente fica por conta de analisar os número de faltas e avaliar se poderá faltar ou não, bem como gerenciá-las, o que é uma tarefa fácil.
 
-        \subsection{Google Forms}
-
-        O \textit{Google Forms}\footnote{www.google.com/forms/about/} é uma das aplicações gratuitas para criação e disponibilização de questionários mais utilizadas no mundo. As vantagens de se utilizar o \textit{Google Forms} reside na facilidade e rapidez ao criar questionários, disponibilizá-los e visualizar os resultados. Ademais, existe uma variedade de tipos questões que podem ser adicionadas aos questionários (múltipla escolha, \textit{checkboxes}, escalas, \textit{dropdown}, respostas abertas curtas ou longas, etc). Os resultados dos questionários são apresentados através de gráficos de pizza, gráficos de barra ou tabelas. 
-
-        Apesar de todos os pontos positivos mencionados, utilizar o \textit{Google Forms} para gerenciar questionários de avaliações de universidades não é eficiente visto que existem inúmeras turmas com diversos discentes. Logo, disponibilizar, gerenciar e analisar os resultados constantemente ao longo dos semestres não seria uma tarefa fácil.
-
-        \subsection{SisNTI}
-
-        SisNTI\footnote{http://200.239.152.5/sisnti/} é o nome do sistema \textit{web} desenvolvido por \citeonline{plinio:2016} como trabalho de conclusão do curso de Sistemas de Informação da UFOP. O sistema tem como objetivo facilitar o gerenciamento das atividades que o Núcleo da Tecnologia da Informação (NTI) executa no ICEA. 
-
-        Os usuários comuns, discentes e docentes, utilizam o sistema a fim de fazer solicitações de serviço ao NTI do ICEA sem precisarem ir fisicamente ao local para tal. Estas solicitações podem ser serviços de reparo, troca de equipamentos, etc. Os administradores do sistema, técnicos e bolsistas do NTI, recebem as solicitações, definem a prioridade de atendimento das mesmas.
-
-        Similarmente ao \textit{SisAV}\footnote{https://github.com/otobraz/Assessment-System}, a aplicação desenvolvida neste trabalho, o \textit{SisNTI} é uma plataforma \textit{web} desenvolvida especificamente para a UFOP e ambos fazem uso da autenticação por meio das credenciais da \textit{minhaUFOP}. 
+        \subsection{Minha UFMG}
+        
+		O \textit{MinhaUFMG} é um portal online para atender a todos os professores, funcionários e alunos da instituição, fornecendo um conjunto de ferramentas de trabalho colaborativo, como: correio eletrônico, agenda corporativa, controle de tarefas, notas e faltas pelo professor. O \textit{MoodleUFOP} que também fornece as funcionalidades do MinhaUFMG, não conta com o controle de frequência para os cursos presenciais, deixando que o controle de faltas a critério do professor, sendo através do diário impresso ou planilhas.
+        
+        Similarmente a\footnote{https://github.com/chesman12/ufop-faltas}, a aplicação desenvolvida neste trabalho, o \textit{Diário de Frequência} é uma plataforma \textit{web} desenvolvida especificamente para a UFOP e que tem como objetivo automatizar o processo de chamada. 
 
 % ---
 \chapter{Metodologia}\label{metodologia}
 % ---
-        Neste capítulo são detalhadas todas as etapas realizadas durante o desenvolvimento do trabalho. São apresentadas as atividades referentes a revisão teórica, levantamento de requisitos, arquitetura do banco de dados, desenvolvimento do sistema e testes realizados. Por fim, é discutido a respeito da reunião realizada com o NAP do campus principal da UFOP.
+        Neste capítulo são detalhadas todas as etapas realizadas durante o desenvolvimento do trabalho. São apresentadas as atividades referentes a revisão teórica, levantamento de requisitos, arquitetura do banco de dados, desenvolvimento do sistema e testes realizados. Por fim, é discutido a respeito da validação do sistema pelos professores.
+        
+    \section{Implantação da metodologia de desenvolvimento \textit{BOPE}}
+    
+     O BOPE é um processo híbrido das metodologias ágeis Scrum e XP aliados com as orientações contidas no Project Management Body of Knowledge (PMBOK), um conjunto de diretrizes na gestão de projetos. %citar PMBOK
+     
+	O fluxo de trabalho do BOPE\cite{PEREIRA; Senna Carneiro; PEREIRA, 2013} determina que  uma série de regras que incluem tarefas de planejamento, execução e testes sejam definidas. Além disso, o mesmo é um processo dirigido por artefatos o que significa que as tarefas realizadas devem gerar um artefato padronizado. Desta forma, foram desenvolvidos cenários e casos de testes (Anexo A), requisitos funcionais e não funcionais (Apêndice A), facilitando a definição das tarefas e atividades a serem concluídas durante o desenvolvimento
+deste projeto.
+
+	O desenvolvimento ágil é uma técnica muito eficiente no desenvolvimento de
+qualquer tipo de projeto. A possibilidade de gerar artefatos que podem rapidamente se
+moldar as necessidades do projeto, permite evitar um cenário onde o produto final nada se
+encaixa com o que se era esperado. Uma vez que as etapas de desenvolvimento são curtas,
+um erro de planejamento pode ser rapidamente corrigido. Com isso evita-se retrabalho e
+consequentemente economiza-se recursos, fazendo com que a chance de sucesso do produto
+final seja muito maior.
 
     \section{Estudo do Escopo e Problema}
 
     A primeira etapa envolveu pesquisas e revisões da literatura que abordam o problema, escopo do projeto e ferramentas que estão de alguma maneira relacionadas ao trabalho. 
 
-    ``O software tem o único propósito de fornecer valor aos seus usuários'' \cite[tradução nossa]{hooker:1996}. Assim, um dos pilares do projeto são as pessoas que utilizarão o sistema.  e entender o papel de cada uma é fundamental. Levando isso em consideração, foram feitas pesquisas a fim de compreender melhor os pontos de vista dos principais usuários finais do sistema, discentes e docentes.
+    ''O software tem o único propósito de fornecer valor aos seus usuários'' \cite[tradução nossa]{hooker:1996}. Assim, um dos pilares do projeto são as pessoas que utilizarão o sistema.  e entender o papel de cada uma é fundamental. Levando isso em consideração, foram feitos levantamentos a fim de compreender melhor os pontos de vista dos principais usuários finais do sistema, discentes e docentes.
 
-    O ambiente onde o sistema será implantado é um importante fator e foi considerado. Uma vez que o sistema tem como objetivo atender as necessidades uma universidade, foram realizados estudos a fim de compreender melhor o que é considerado qualidade de ensino, as diferentes metodologias de ensino utilizadas e, principalmente, as principais técnicas e tópicos utilizados em avaliações de classes em instituições de ensino.
-
+    O ambiente onde o sistema será implantado é um importante fator e foi considerado. Uma vez que o sistema tem como objetivo atender as necessidades de uma universidade, foram realizados estudos a fim de compreender melhor como é feito o processo de controlar faltas e gerenciar os resultados finais.
+    
     \section{Estudo de Ferramentas e Tecnologias}
 
     Nesta fase foram realizadas pesquisas relativas as ferramentas e tecnologias utilizadas no desenvolvimento do sistema. O principal objetivo deste estudo foi para obtenção de um maior entendimento sobre as vantagens, desvantagens e limitações de cada ferramenta a fim de reduzir a ocorrência de problemas e facilitar a correção dos mesmos quando eles ocorressem.
@@ -712,24 +787,29 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
 
     \section{Levantamento de Requisitos}
 
-    ``Os requisitos de um sistema são descrições de funcionalidades e restrições das mesmas, refletindo as necessidades daqueles que o utilizarão'' \cite[p. 83, tradução nossa]{sommervile:2011}. Para facilitar a identificação e definição de requisitos foram realizadas as seguintes atividades: identificação dos \textit{stakeholders}, aplicação de questionários e desenvolvimento de casos de uso das principais funcionalidades do sistema.
+    ''Os requisitos de um sistema são descrições de funcionalidades e restrições das mesmas, refletindo as necessidades daqueles que o utilizarão'' \cite[p. 83, tradução nossa]{sommervile:2011}. Para facilitar a identificação e definição de requisitos foram realizadas as seguintes atividades: identificação dos \textit{stakeholders}, aplicação de questionários e desenvolvimento de casos de uso das principais funcionalidades do sistema.
 
-    \subsection{Identificação de \textit{Stakeholders}}
+    \subsection{Identificação dos \textit{Stakeholders}}
 
     \citeonline{sommervile:2011} diz que os \textit{stakeholders} são aqueles que são beneficiados pelo sistema tanto direta quanto indiretamente. Os principais \textit{stakeholders} do \textit{Sistema de Avaliação} são: \textit{discentes, docentes, membros do colegiado, responsáveis pelo desenvolvimento do sistema, responsáveis pela manutenção do sistema}.   
+    
+    
+	\subsection{Avaliação da Qualidade do Sistema Web}
+     Metodologias e Ferramentas para 
+     AVALIAÇÃO DE USABILIDADE.
 
     \subsection{Usuários do Sistema}
 
-    Após os \textit{stakeholders} serem identificados, foi determinado quais seriam os diferentes tipos de usuário que o sistema possuiria. Os tipos definidos foram: \textit{Super Administrador}, \textit{Administrador - NAP}, \textit{Professor} e \textit{Aluno}.
+    Após os \textit{stakeholders} serem identificados, foi determinado quais seriam os diferentes tipos de usuário que o sistema possuiria. Os tipos definidos foram: \textit{Administrador}, \textit{Professor} e \textit{Aluno}.
 
     \begin{itemize}
-        \item \textbf{Super Administrador: } responsável por controlar permissões de acesso e recursos necessários para que os demais usuários possam utilizar o \textit{Sistema de Avaliação}.
-        \item \textbf{Administrador - NAP: } administrador que possui menos permissões que o super administrador, não podendo fazer o CRUD dos registros relacionados a UFOP. No entanto, eles são capazes de criar questionários gerais, disponibilizá-los às turmas e gerenciar as perguntas dos mesmos. 
-        \item \textbf{Professor: } gerenciam questionários e os disponibilizam às suas turmas. Além disso, eles também criam e gerenciam as orientações realizadas.
-        \item \textbf{Alunos: } respondem aos questionários disponibilizados às suas turmas, fornecendo informações cruciais aos docentes, podendo também, assim como os seus orientadores, gerenciar as informações referentes as orientações depois que elas forem criadas.
+   		\item \textbf{Administrador: gerenciam novas disciplinas e períodos.} 
+        \item \textbf{Professor: } gerenciam turmas e realizam cadastro de faltas. Além disso, eles também aprovam solicitações de abono feitas pelos alunos.
+        \item \textbf{Alunos: } acompanham o lançamento de faltas e as gerenciam; solicitam abono de faltas ao professor, desde que tenham atestado ou justificativa válida.
     \end{itemize}   
+    
 
-    \subsection{Identificação de Limitações da PDDGU}
+    \subsection{Identificação de Limitações da Aplicação}
 
     Os principais problemas e limitações da Pesquisa de Desenvolvimento de Disciplinas de Graduação da UFOP foram identificados através do questionário \textit{Pesquisa de Desenvolvimento de Disciplinas da Graduação da UFOP (respondida pelos discentes)} (Apêndice \ref{questionario_1}). Este questionário foi aplicado aos docentes do ICEA a fim de saber a opinião dos mesmos sobre a \textit{Pesquisa de Desenvolvimento de Disciplinas da Graduação da UFOP} que os alunos respondem após cada semestre. 
 
@@ -751,7 +831,7 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
         \item permitir a disponibilização de questionários sempre que necessário.
     \end{enumerate} 
 
-    \subsection{Definição das Perguntas Padrão}
+    \subsection{Definição de rotas e funcionalidades}
 
     Uma das vantagens trazida pelo \textit{SisAV} é a capacidade dos discentes criarem seus próprios questionários. Cada discente segue sua própria metodologia de ensino e essas metodologias nem sempre serão as mais adequadas para todos disciplinas. Deste modo, fazer o uso de um único questionário para avaliar o ensino de todas as disciplinas não é a melhor abordagem. Esta liberdade é fundamental para a captação de informações relevantes e identificação de pontos do ensino a serem melhorados. 
 
@@ -772,84 +852,8 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
 
     As funcionalidades que o sistema foram definidas separadamente para cada tipo de usuário.
 
-    \subsubsection{Super Administrador}
-
-    A Tabela \ref{tab:funcoes-admin} apresenta as funções que podem ser executadas pelos \textit{Super Administradores}: 
-	
-    \begin{table}[h]
-    \centering
-    \caption{Funcionalidades - Super Administrador}
-    \begin{tabular}{p{5cm} p{10cm}}
-    \hline
-    Funcionalidade & Descrição \\
-    \hline
-    \hline
-    Gerenciar Departamentos & Cadastro, alteração e exclusão dos departamentos\\
-    \hline
-    Gerenciar Cursos & Cadastro, alteração e exclusão dos cursos\\
-    \hline
-    Gerenciar Disciplinas & Cadastro, alteração e exclusão das disciplinas\\
-    \hline
-    Gerenciar Administradores & Cadastro, alteração e exclusão de usuários do tipo \textit{administrador}.\\
-    \hline
-    Gerenciar Questionário Geral & Gerenciamento dos questionários que são disponibilizados à múltiplas turmas\\
-    \hline
-    Disponibilizar Questionário Geral & Disponibilização dos questionários às turmas dos departamentos selecionados\\
-    \hline
-    Gerenciar Perguntas Padrão & Cadastro, alteração e exclusão de perguntas padrão dos questionários\\
-    \hline
-    Gerenciar Tipos de Orientação & Cadastro, alteração e exclusão dos tipos de orientação\\
-    \hline
-    Importar Turmas  & Importação de turmas do arquivo \textit{TURMAS DE DISCIPLINA.csv} disponibilizado pela Seção de Ensino \\
-    \hline
-    Importar Ajustes & Importação de ajustes dos arquivos \textit{MATRICULA AJUSTE.csv} disponibilizado pela Seção de Ensino \\
-    \hline
-    Importar Professores & Importação de professores do arquivo \textit{CADASTRO PROFESSOR.csv} disponibilizado pela Seção de Ensino \\
-    \hline
-    Importar Alunos & Importação de alunos do arquivo \textit{CADASTRO ALUNOS.csv} disponibilizado pela Seção de Ensino \\
-    \hline
-    Visualizar Respostas & Visualização das respostas de determinado aluno\\
-    \hline
-    Visualizar Resultados & Visualização dos resultados de determinado questionário por meio de gráficos de barras\\
-    \hline
-    Visualização dos dados & Visualização de todos os recursos do sistema\\
-    \hline
-    \end{tabular}
-    \caption*{Fonte: produzido pelo autor}
-    \label{tab:funcoes-admin}
-    \end{table}
-	
     \newpage
     
-    \subsubsection{Administrador - NAP}
-
-    A Tabela \ref{tab:funcoes-admin} apresenta as funcionalidades do usuário \textit{Administrador - NAP}: 
-
-    \begin{table}[h]
-    \centering
-    \caption{Funcionalidades - Administrador - NAP}
-    \begin{tabular}{p{5cm} p{10cm}}
-    \hline
-    Funcionalidade & Descrição \\
-    \hline
-    \hline
-    Gerenciar Questionário Geral & Gerenciamento dos questionários que são disponibilizados à múltiplas turmas\\
-    \hline
-    Disponibilizar Questionário Geral & Disponibilização dos questionários às turmas dos departamentos selecionados\\
-    \hline
-    Gerenciar Perguntas Padrão & Cadastro, alteração e exclusão de perguntas padrão dos questionários\\
-    \hline
-    Visualizar Respostas & Visualização das respostas de determinado aluno\\
-    \hline
-    Visualizar Resultados & Visualização dos resultados de determinado questionário por meio de gráficos de barras\\
-    \hline
-    Visualização dos dados & Visualização de todos os recursos do sistema\\
-    \hline
-    \end{tabular}
-    \caption*{Fonte: produzido pelo autor}
-    \label{tab:funcoes-admin}
-    \end{table}
-
     \subsubsection{Aluno}
 
     A Tabela \ref{tab:funcoes-aluno} apresenta as funções que podem ser executadas pelo usuário do tipo \textit{Aluno}: 
@@ -935,30 +939,6 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
     
     Foram criados quatro mapas de site, correspondendo à cada \textit{homepage} dos usuários do sistema.
     
-        \subsubsection{Super Administrador}
-	
-		A Figura \ref{fig:websitemap_superadmin} apresenta o mapa do site que é acessado pelos usuários do tipo \textit{Super Administrador}:
-        
-        \begin{figure}[h]	
-            \centering
-            \caption{Mapa do Site - Super Administrador}						   \label{fig:websitemap_superadmin}
-            \includegraphics[width=1\textwidth]{img/websitemap_superadmin}
-            \caption*{Fonte: produzido pelo autor}
-    	\end{figure}
-        
-        \newpage
-        
-        \subsubsection{Administrador - NAP}
-		
-        A Figura \ref{fig:websitemap_adminnap} apresenta o mapa do site que é acessado pelos usuários do tipo \textit{Administrador - NAP}:
-        
-        \begin{figure}[h]	
-            \centering
-            \caption{Mapa do Site - Administrador - NAP}						   \label{fig:websitemap_adminnap}
-            \includegraphics[width=1\textwidth]{img/websitemap_adminnap}
-            \caption*{Fonte: produzido pelo autor}
-    	\end{figure}
-        
         \newpage
         
         \subsubsection{Aluno}
@@ -989,7 +969,7 @@ O presente trabalho aborda o desenvolvimento de um sistema \textit{web} para o g
 
 A arquitetura do banco de dados do sistema foi concebida levando em consideração não somente a capacidade do mesmo em atender as atuais necessidades, mas também a facilidade dele em atender futuros requisitos. A seguir é apresentado o Modelo Entidade Relacionamento do banco de dados, o qual foi subdividido em duas partes: \textit{Questionário} e \textit{UFOP}.
 
-	\subsection{Questionário}
+	\subsection{Importação de planilhas}
 
     O banco de dados do sistema veio a ser complexo e robusto. Isso se deu pelo fato do sistema permitir que os usuários criem seus próprios questionários e perguntas. Para garantir este requisito, foi necessário considerar o conjunto de estruturas que compões um questionário (\textit{Perguntas} e seus tipos, \textit{Opções} e \textit{Respostas}) e criar entidades para cada uma delas. A Figura \ref{fig:eer-questionario} mostra como foi modelada a estrutura dos questionários:
 
@@ -1039,7 +1019,7 @@ A arquitetura do banco de dados do sistema foi concebida levando em consideraç�
 
     Os administradores do sistema devem estar pré-cadastrados na base de dados para que eles acessem o sistema. Assim, foi desenvolvido o CRUD dos administradores, onde é necessário que o usuário defina além das informações pessoais, o tipo do administrador (Super Administrador, Administrador - NAP) que ele está criando. 
 
-        \subsection{Questionários}
+        \subsection{Processo de gerenciamento de faltas}
 
     	O desenvolvimento das funções relativas aos questionários foi subdividido e realizado na seguinte ordem: criação e disponibilização, resposta e visualização dos resultados.
 
@@ -1049,13 +1029,13 @@ A arquitetura do banco de dados do sistema foi concebida levando em consideraç�
 
             A mesma metodologia foi empregada para tratar as perguntas dos questionários. Se uma pergunta possui o \textit{ID} de um professor, a mesma só poderá ser adicionada aos questionários que este criar. Caso contrário, a chave estrangeira será nula, indicando que apenas os administradores poderão adicioná-las aos questionários gerais criados por eles.
 
-            \subsubsection{Respostas}
+            \subsubsection{Acesso as faltas e solicitação de abono}
 
             Quando docentes ou o NAP disponibilizam os questionários às turmas, os discentes destas turmas, podem acessar o mesmo e respondê-lo. O formulário de respostas é construído após ser feita a requisição para responder o questionário. O \textit{Controller} dos questionários é responsável por buscar o questionário, as perguntas pertencentes ao mesmo e as opções destas perguntas. O tipo de \textit{input} a ser gerado depende do tipo da pergunta. Elas podem ser abertas (\textit{text input}), fechadas - única escolha (\textit{radio}) e fechadas - múltipla escolha (\textit{checkbox}). A relação entre perguntas e questionários possui um atributo \textit{numero} que é utilizado para garantir que as perguntas sejam exibidas na mesma ordem em que elas foram adicionadas ao questionários. Além do formulário para respostas, também são exibidos o título e descrição do questionário para que os discentes que o forem responder entendam o objetivo do mesmo. 
             
             A visualização das respostas de um discente é uma funcionalidade restrita somente aos administradores do sistema ou ao próprio discente. Os docentes não possuem acesso as respostas específicas de um discente, já que é necessário manter o anonimato dos mesmos para os docentes.
 
-            \subsubsection{Visualização dos Resultados}
+            \subsubsection{Visualização das Aprovações de Abono}
 
 			A visualização dos resultados é um funcionalidade universal, podendo ser utilizada por qualquer usuário autenticado no sistema. No entanto, existem restrições sobre a exibição do resultado de acordo com o tipo do usuário que o está acessando. O resultado das questões fechadas pode ser visualizado por qualquer tipo de usuário. Todavia, as respostas das questões abertas podem ser acessadas apenas por administradores e pelo docente que disponibilizou determinado questionário. Esta restrição teve que ser imposta já que, ao contrário de perguntas fechadas, não é possível controlar o que cada discente escreverá nas perguntas abertas.
 
@@ -1105,7 +1085,7 @@ A arquitetura do banco de dados do sistema foi concebida levando em consideraç�
 
     		\end{enumerate}
 
-        \subsection{Orientações}
+        \subsection{Tutorial }
        
 		Após finalizadas todas as funcionalidades dos questionários, foi dado início a parte da aplicação responsável pelo gerenciamento das orientações da UFOP. Primeiramente, a busca pelos \textit{Alunos} e capacidade de iniciar uma orientação foi adicionada para o \textit{Professor} conforme exemplificado pela Figura \ref{fig:alunos_home}: 
         
@@ -1127,7 +1107,7 @@ A arquitetura do banco de dados do sistema foi concebida levando em consideraç�
         \label{fig:orientacoes_home}
         \end{figure}
         
-        \subsection{Testes}
+        \subsection{Testes automatizados com o Framework Selenium}
 
         Foram executados basicamente dois tipos de testes de desenvolvimento: \textit{teste em ambiente de desenvolvimento} e \textit{teste em ambiente de produção}. O teste de desenvolvimento é o tipo de teste realizado durante a fase de produção do sistema pelos desenvolvedores com o objetivo de identificar \textit{bugs}, erros e não-conformidades \cite[p. 210]{sommervile:2011}.
 
@@ -1143,7 +1123,7 @@ A arquitetura do banco de dados do sistema foi concebida levando em consideraç�
             
             O principal problema identificado durante os testes do \textit{website}, foi a diferença na maneira em que \textit{MariaDB} (ambiente de desenvolvimento) e o \textit{MySQL} (ambiente de produção) tratavam os números. As consultas realizadas no \textit{MariaDB} retornavam os números exatamente como \textit{Integers}, enquanto que aquelas feitas no \textit{MySQL} retornavam os números como \textit{Strings}. Devido a esta diferença, algumas partes do sistema online deixaram de funcionar já todos os números estavam sendo manipulados como \textit{Integers}.
                                
-	\section{Reunião com o NAP e Validação do Sistema}
+	%\section{Reunião com o NAP e Validação do Sistema}
 
 	Após a produção do sistema ter atingido o seu estágio final, foi agendada uma reunião com o NAP da UFOP para apresentação do projeto desenvolvido e obtenção de \textit{feedbacks} e sugestões. Participaram da reunião o Adilson Pereira dos Santos e Mônica Versiani Machado do NAP, Theo Silva Lins, orientador, e Oto Braz Assunção, orientando. 
     
